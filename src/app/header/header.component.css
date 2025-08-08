@@ -1,0 +1,106 @@
+.custom-navbar {
+  background: linear-gradient(to right, #2e7d32, #1b5e20); /* dark green gradient */
+  border-bottom: 2px solid #66bb6a;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* deeper shadow */
+}
+
+.brand-text {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link.nav-underline::after {
+  background-color: #ffffff;
+}
+
+
+.brand-text {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  color: #ffffff !important; /* slightly darker green */
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link.nav-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link.nav-underline:hover::after,
+.navbar-nav .nav-link.nav-underline.active::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border-color: #28a745;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%2810, 140, 52, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.logo-img {
+  max-height: 70px;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    max-height: 50px;
+  }
+}
+
+/* Bootstrap-friendly subtle animation */
+.animate-logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animate-logo:hover {
+  transform: scale(1.1); /* Grows slightly on hover */
+}
+
+.animate-logo:hover {
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-logo:hover {
+  transform: rotate(-3deg) scale(1.05);
+}
+@media (hover: none) {
+  .animate-logo:active {
+    transform: scale(1.1);
+  }
+}
+
