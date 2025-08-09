@@ -56,11 +56,6 @@
   }
 }
 
-@media (max-width: 576px) {
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-}
 
 
 /* === PRODUCT FILTER === */
