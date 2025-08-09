@@ -1,27 +1,29 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-2 sticky-top custom-navbar">
-  <a class="navbar-brand d-flex align-items-center" href="#home">
+  <a class="navbar-brand d-flex align-items-center" href="#home" (click)="closeMenu()">
     <img src="assets/logo.png" alt="Jai Fresh Logo" class="me-3 logo-img animate-logo" />
     <span class="fw-bold fs-4 brand-text">Jai Fresh Exports</span>
   </a>
+
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navMenu">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link nav-underline" href="#home">Home</a>
+        <a class="nav-link nav-underline" href="#home" (click)="closeMenu()">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-underline" href="#about">About</a>
+        <a class="nav-link nav-underline" href="#about" (click)="closeMenu()">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-underline" href="#products">Products</a>
+        <a class="nav-link nav-underline" href="#products" (click)="closeMenu()">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-underline" href="#blog">Blog</a>
+        <a class="nav-link nav-underline" href="#blog" (click)="closeMenu()">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-underline" href="#contact">Contact</a>
+        <a class="nav-link nav-underline" href="#contact" (click)="closeMenu()">Contact</a>
       </li>
     </ul>
   </div>
